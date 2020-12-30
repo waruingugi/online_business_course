@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'business_course.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "ENGINE": 'django.db.backends.postgresql',
     }
 }
 
@@ -156,7 +156,7 @@ if DEBUG:
     try:
         from business_course.local_settings import *  # noqa
     except Exception as e:  # noqa
-        pass
+        print(e)  # noqa
 else:
     # Parse database configuration from $DATABASE_URL
     import dj_database_url  # noqa
