@@ -31,7 +31,7 @@ DEBUG = bool(
     int(os.environ['DEBUG'])
 )
 
-ALLOWED_HOSTS = ['thisiswarui.co.ke', 'www.thisiswarui.co.ke']
+ALLOWED_HOSTS = ['thisiswarui.co.ke', 'www.thisiswarui.co.ke', 'online-business-course.herokuapp.com']
 
 # CUSTOM USER MODEL
 AUTH_USER_MODEL = 'registration.Users'
