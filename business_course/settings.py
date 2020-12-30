@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'business_course.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": 'django.db.backends.postgresql',
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
     }
 }
 
