@@ -16,8 +16,3 @@ class Users(AbstractUser):
 
     def __str__(self):
         return self.username
-
-    def save(self, *args, **kwargs):
-        username = self.username.split()[0]
-        self.username = username.capitalize()  # Capitalize the name
-        super().save(*args, **kwargs)

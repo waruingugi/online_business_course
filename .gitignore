@@ -30,6 +30,9 @@ htmlcov/
 # Ignore local_settings.py file
 local_settings.py
 
+# Ignore local_wsgi.py file
+local_wsgi.py
+
 # Ignore word documents
 *.doc
 

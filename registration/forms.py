@@ -16,6 +16,11 @@ class UsersForm(ModelForm):
         the form('templates/info.html').
         """
         if Users.objects.filter(email=email).exists():
-            raise forms.ValidationError(f'Email {email} is already enrolled. Please try another one!')  # noqa
+            raise forms.ValidationError(f'The email {email} is already enrolled. Please try another one!')  # noqa
 
         return email
+
+    def clean_username(self):
+        username = self.cleaned_data['username'].split()[0]
+        username = username.capitalize()  # Capitalize the name
+        return username
