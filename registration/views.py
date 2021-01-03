@@ -25,7 +25,7 @@ class HomeView(View):
             usersform.save()
 
             task = add_to_email_list.delay(
-                usersform.data['username'], usersform.data['email']
+                usersform.cleaned_data['username'], usersform.cleaned_data['email']
             )
             logger.info(f'views.HomeView: add_to_email_list task status {task.status}')
 
