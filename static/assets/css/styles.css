@@ -1,5 +1,5 @@
 body {
-  font-size: 17px;
+  font-size: 18px;
   font-family: Montserrat, sans-serif;
 }
 
@@ -105,3 +105,6 @@ html {
   animation-iteration-count: infinite;
 }
 
+h2 {
+  font-size: 2.4rem;
+}
