@@ -10,7 +10,7 @@ def add_to_email_list(name, email):
     sendpulse_post_url = os.environ['SENDPULSE_POST_URL']
 
     post_data = {
-        'name': name, 'email': email, 'phone': ''
+        'Name': name, 'Email': email, 'Phone': ''
     }
     logger.info(f'tasks.add_to_email_list: Received data {post_data}')
 
